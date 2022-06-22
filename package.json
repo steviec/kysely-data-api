@@ -18,7 +18,8 @@
     "build:cjs": "tsc -p tsconfig-cjs.json",
     "format": "eslint --fix .",
     "lint": "tsc --noEmit && eslint .",
-    "test": "AWS_SDK_LOAD_CONFIG=1 jest"
+    "test": "AWS_SDK_LOAD_CONFIG=1 jest",
+    "prepare": "npm run build"    
   },
   "devDependencies": {
     "@tsconfig/node14": "^1.0.1",
